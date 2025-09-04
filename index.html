@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4 fw-bold">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">My Website</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#plans">Plans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-light">
+      <div class="container">
+        <div
+          id="slides"
+          class="carousel slide pb-5 w-100"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#slides"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#slides"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#slides"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg"
+                class="d-block w-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg"
+                class="d-block w-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.pexels.com/photos/3861963/pexels-photo-3861963.jpeg"
+                class="d-block w-100"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#slides"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#slides"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container" id="projects">
+        <h2>Featured Projects</h2>
+        <label class="text-muted">
+          A few recent builds. Click through for details.
+        </label>
+      </div>
+
+      <div class="container my-4" id="about">
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./img/bike-bicycle-tree-stones-wallpaper-thumb.jpg"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Lifting Inspection Portal</h4>
+                <p class="card-text text-muted">
+                  Multi-tenant dashboard with reports, role-based access, and
+                  offline-first inspections.
+                </p>
+                <a href="#" class="btn btn-outline-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./img/27230143383_23e1dce722.jpg"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Courses Academy</h4>
+                <p class="card-text text-muted">
+                  .NET 9 + Onion Architecture app with Identity, payments, and
+                  instructor tooling.
+                </p>
+                <a href="#" class="btn btn-outline-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card">
+              <img class="card-img-top" src="./img/beach.jpg" />
+              <div class="card-body">
+                <h4 class="card-title">Legal Matters Connector</h4>
+                <p class="card-text text-muted">
+                  Sync engine linking M365, NetDocuments, and CRM with audit
+                  logs and retries.
+                </p>
+                <a href="#" class="btn btn-outline-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./img/WhatsApp Image 2025-08-10 at 16.21.00_63f6e43a.jpg"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Contacts Intelligence</h4>
+                <p class="card-text text-muted mb-5">
+                  Search + pagination over millions of records with server-side
+                  filtering.
+                </p>
+                <a href="#" class="btn btn-outline-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="row g-4">
+          <div class="col-12 col-md-8">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">About Me</h3>
+                <p class="text-muted">
+                  15+ years building enterprise apps with .NET, SQL Server, and
+                  modern front-end stacks. I mentor teams, design architectures,
+                  and ship maintainable software.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Get in Touch</h3>
+                <p class="text-muted">
+                  Available for consulting, training, and architecture reviews.
+                </p>
+                <div class="d-grid">
+                  <button type="button" class="btn btn-success">
+                    Email Me
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mb-5" id="plans">
+        <div class="row align-items-stretch g-5">
+          <div class="col-12 col-lg-6">
+            <div
+              class="card rounded-4 shadow-sm bg-light mt-5 mb-3 h-100 w-100"
+            >
+              <div class="card-header">
+                <h3 class="fw-bold fs-4">
+                  <span class="badge bg-dark">Free</span>
+                </h3>
+                <p class="text-muted">For Freelancers</p>
+              </div>
+              <div class="card-body">
+                <h3 class="fw-bold fs-2">
+                  $0.00<span
+                    class="fs-5"
+                    style="position: absolute; transform: translateY(0.5em)"
+                    >/month</span
+                  >
+                </h3>
+                <ul class="list-group list-group-flush mt-2">
+                  <li
+                    class="fs-5 fw-semibold list-group-item border-0 bg-light"
+                  >
+                    <i class="bi bi-check-circle-fill bg-light mx-2"></i>
+                    Single User
+                  </li>
+                  <li
+                    class="fs-5 fw-semibold list-group-item border-0 bg-light"
+                  >
+                    <i class="bi bi-check-circle-fill bg-light mx-2"></i>
+                    +10 Downloads Per Month
+                  </li>
+                  <li
+                    class="fs-5 fw-semibold list-group-item border-0 bg-light"
+                  >
+                    <i class="bi bi-check-circle-fill bg-light mx-2"></i>
+                    Faster Files
+                  </li>
+                  <li
+                    class="fs-5 fw-semibold list-group-item border-0 bg-light"
+                  >
+                    <i class="bi bi-check-circle-fill bg-light mx-2"></i>
+                    +25 Custom Packs
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer border-0">
+                <div class="d-grid">
+                  <button class="btn btn-dark rounded-4 mb-3">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div
+              class="card rounded-4 shadow-sm text-bg-dark mt-5 mb-3 h-100 w-100"
+            >
+              <div class="card-header border-bottom">
+                <h3 class="fw-bold fs-4">
+                  <span class="badge bg-success">Pro</span>
+                </h3>
+                <p class="text-bg-dark">For Agencies</p>
+              </div>
+              <div class="card-body">
+                <h3 class="fw-bold fs-2">
+                  $100.00<span
+                    class="fs-5"
+                    style="position: absolute; transform: translateY(0.5em)"
+                    >/month</span
+                  >
+                </h3>
+                <ul class="list-group list-group-flush mt-2">
+                  <li
+                    class="fs-5 fw-semibold list-group-item border-0 text-bg-dark"
+                  >
+                    <i class="bi bi-check-circle-fill text-success mx-2"></i>
+                    Single User
+                  </li>
+                  <li
+                    class="fs-5 fw-semibold list-group-item border-0 text-bg-dark"
+                  >
+                    <i class="bi bi-check-circle-fill text-success mx-2"></i>
+                    +10 Downloads Per Month
+                  </li>
+                  <li
+                    class="fs-5 fw-semibold list-group-item border-0 text-bg-dark"
+                  >
+                    <i class="bi bi-check-circle-fill text-success mx-2"></i>
+                    Faster Files
+                  </li>
+                  <li
+                    class="fs-5 fw-semibold list-group-item border-0 text-bg-dark"
+                  >
+                    <i class="bi bi-check-circle-fill text-success mx-2"></i>
+                    +25 Custom Packs
+                  </li>
+                  <li
+                    class="fs-5 fw-semibold list-group-item border-0 text-bg-dark"
+                  >
+                    <i class="bi bi-check-circle-fill text-success mx-2"></i>
+                    Priority Support 24/7
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer border-0">
+                <div class="d-grid">
+                  <button class="btn btn-success rounded-4 mb-3">
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container h-100 d-flex align-items-center justify-content-center"
+        id="reviews"
+      >
+        <div class="card rounded-4 shadow-sm bg-light mt-5 mb-3 w-50">
+          <div class="card-body m-3">
+            <div class="row">
+              <div class="col-12 col-lg-7 fw-bold fs-4">
+                What others think about your product
+              </div>
+              <div class="col-12 col-lg-5">
+                <div class="card">
+                  <div class="card-body">
+                    <h3 class="display-5 fw-semibold">
+                      <i class="fa-solid text-warning fa-star"></i>
+                      4.8
+                    </h3>
+                    <p class="text-center fw-semibold">Average Rating</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="vstack">
+                  <form>
+                    <div class="input-group">
+                      <span class="input-group-text rounded-start-4">🔎</span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Search Reviews"
+                      />
+                    </div>
+                    <h5 class="fw-bold mt-5">
+                      <label>Reviews</label>
+                    </h5>
+                    <div class="d-flex">
+                      <div class="col-1">
+                        <h5>
+                          5<i
+                            class="fa-solid text-warning fa-star fs-6 ms-1"
+                          ></i>
+                        </h5>
+                      </div>
+                      <div class="col-11">
+                        <div
+                          class="progress"
+                          style="transform: translateY(0.5em)"
+                        >
+                          <div
+                            class="progress-bar bg-warning"
+                            style="width: 80%"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="col-1">
+                        <h5>
+                          4<i
+                            class="fa-solid text-warning fa-star fs-6 ms-1"
+                          ></i>
+                        </h5>
+                      </div>
+                      <div class="col-11">
+                        <div
+                          class="progress"
+                          style="transform: translateY(0.5em)"
+                        >
+                          <div
+                            class="progress-bar bg-warning"
+                            style="width: 60%"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="col-1">
+                        <h5>
+                          3<i
+                            class="fa-solid text-warning fa-star fs-6 ms-1"
+                          ></i>
+                        </h5>
+                      </div>
+                      <div class="col-11">
+                        <div
+                          class="progress"
+                          style="transform: translateY(0.5em)"
+                        >
+                          <div
+                            class="progress-bar bg-warning"
+                            style="width: 20%"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="col-1">
+                        <h5>
+                          2<i
+                            class="fa-solid text-warning fa-star fs-6 ms-1"
+                          ></i>
+                        </h5>
+                      </div>
+                      <div class="col-11">
+                        <div
+                          class="progress"
+                          style="transform: translateY(0.5em)"
+                        >
+                          <div
+                            class="progress-bar bg-warning"
+                            style="width: 40%"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="col-1">
+                        <h5>
+                          1<i
+                            class="fa-solid text-warning fa-star fs-6 ms-1"
+                          ></i>
+                        </h5>
+                      </div>
+                      <div class="col-11">
+                        <div
+                          class="progress"
+                          style="transform: translateY(0.5em)"
+                        >
+                          <div
+                            class="progress-bar bg-warning"
+                            style="width: 30%"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-grid">
+                      <button class="btn btn-success rounded-3 mt-5">
+                        Write Review
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid bg-white text-muted mt-5">
+        <div class="container">
+          <footer class="d-flex justify-content-between py-3">
+            <span>© 2025 Captin Dev</span>
+            <span>Built with Bootstrap 5</span>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
